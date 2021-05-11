@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	padding: 10px 30px;
+	width: 100vw;
+}
+
+.navbar {
+	border-radius: 20px;
+	font-weight: 400;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: #bbb;
+	z-index: 100;
+	position: relative;
+}
+
+.navbar a {
+	color: black;
+	text-decoration: none;
+	margin: 1px 10px 1px 1px;
+}
+
+.navbar a:hover {
+	color: dodgerblue;
+}
+.header {
+	background-image: url(../pic/header_pic.png);
+	background-size: cover;
+	background-position: top;
+	display: flex;
+	flex-wrap: wrap;
+	text-transform: uppercase;
+	margin-top: 25px;
+/*	background-color: dodgerblue;
+*/	text-align: center;
+	font-size: 60px;
+	position: relative;
+	height: 95vh;
+	border-radius: 20px;
+}
+
+.text {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	letter-spacing: 20px;
+}
+
+.title {
+	animation-name: fadein;
+	animation-duration: 3s;
+}
+
+#abtme {
+	margin-top: 25px;
+	font-size: 30px;
+}
+
+.textarea {
+	padding: 50px;
+	font-weight: 200;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
