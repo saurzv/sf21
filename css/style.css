@@ -28,6 +28,7 @@ body {
 }
 
 a {
+	text-transform: uppercase;
 	color: black;
 	text-decoration: none;
 	margin: 1px 10px 1px 1px;
@@ -35,6 +36,8 @@ a {
 
 a:hover {
 	color: #62d8bc96;
+	animation-name: expand;
+	animation-duration: 0.5s;
 }
 .header {
 	background-image: url(../pic/header_pic.png);
@@ -50,6 +53,13 @@ a:hover {
 	position: relative;
 	height: 95vh;
 	border-radius: 20px;
+}
+
+.footer{
+	background-color: #407873;
+	padding: 50px;
+	border-radius: 20px;
+	text-align: center;
 }
 
 .text {
@@ -98,5 +108,17 @@ a:hover {
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+@keyframes expand {
+	0% {
+		letter-spacing: 0px;
+	}
+	50%{
+		letter-spacing: 3px;
+	}
+	100% {
+		letter-spacing: 0px;
 	}
 }
