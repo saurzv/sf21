@@ -22,19 +22,19 @@ body {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
-	background-color: #bbb;
+	background-color: #407873;
 	z-index: 100;
 	position: relative;
 }
 
-.navbar a {
+a {
 	color: black;
 	text-decoration: none;
 	margin: 1px 10px 1px 1px;
 }
 
-.navbar a:hover {
-	color: dodgerblue;
+a:hover {
+	color: #62d8bc96;
 }
 .header {
 	background-image: url(../pic/header_pic.png);
@@ -69,6 +69,22 @@ body {
 #abtme {
 	margin-top: 25px;
 	font-size: 30px;
+}
+
+.cont {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 30px;
+}
+
+.cont > div {
+    background-color: #407873;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .textarea {
