@@ -17,8 +17,9 @@ body {
 }
 
 .navbar {
-	border-radius: 20px;
-	font-weight: 400;
+	display: inline;
+/*	border-radius: 20px;
+*/	font-weight: 400;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
@@ -26,6 +27,9 @@ body {
 	z-index: 100;
 	position: fixed;
 	overflow: hidden;
+	width: 100%;
+	top :0;
+	left: 0;
 }
 
 a {
@@ -47,13 +51,13 @@ a:hover {
 	display: flex;
 	flex-wrap: wrap;
 	text-transform: uppercase;
-	margin-top: 25px;
 /*	background-color: dodgerblue;
 */	text-align: center;
 	font-size: 60px;
 	position: relative;
 	height: 95vh;
 	border-radius: 20px;
+	margin-top: 25px;
 }
 
 #anchor {
@@ -114,15 +118,13 @@ a:hover {
     justify-content: space-around;
 }
 
-.abtimg:hover {
-	animation-name: fadein;
-	animation-duration: 2.5s;
-}
-
 .row {
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
+}
+
+.row > img {
 	height: 350px;
 }
 
