@@ -24,7 +24,8 @@ body {
 	text-align: center;
 	background-color: #407873;
 	z-index: 100;
-	position: relative;
+	position: fixed;
+	overflow: hidden;
 }
 
 a {
@@ -53,6 +54,11 @@ a:hover {
 	position: relative;
 	height: 95vh;
 	border-radius: 20px;
+}
+
+#anchor {
+	position: absolute;
+	bottom: 20%;
 }
 
 .footer{
@@ -111,6 +117,21 @@ a:hover {
 .abtimg:hover {
 	animation-name: fadein;
 	animation-duration: 2.5s;
+}
+
+.row {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	height: 350px;
+}
+
+.column {
+	margin: 30px 0;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	
 }
 
 @keyframes fadein {
