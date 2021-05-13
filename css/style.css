@@ -27,7 +27,7 @@ body {
 	z-index: 100;
 	position: fixed;
 	overflow: hidden;
-	width: 100%;
+	width: 100vw;
 	top :0;
 	left: 0;
 }
@@ -53,7 +53,7 @@ a:hover {
 	text-transform: uppercase;
 /*	background-color: dodgerblue;
 */	text-align: center;
-	font-size: 60px;
+	font-size: 4.6vw;
 	position: relative;
 	height: 95vh;
 	border-radius: 20px;
@@ -67,7 +67,7 @@ a:hover {
 
 .footer{
 	background-color: #407873;
-	padding: 50px;
+	padding: 5vh;
 	border-radius: 20px;
 	text-align: center;
 }
@@ -98,6 +98,7 @@ a:hover {
     justify-content: space-around;
     width: 100%;
     font-size: 30px;
+    flex-wrap: wrap;
 }
 
 .cont > div {
@@ -107,7 +108,7 @@ a:hover {
 }
 
 .textarea {
-	font-size: 30px;
+	  font-size: 2.3vw;
     display: flex;
     flex-flow: row;
     padding: 50px;
@@ -116,12 +117,14 @@ a:hover {
     border-radius: 20px;
     margin: 10px 0px 25px 0px;
     justify-content: space-around;
+  	flex-wrap: wrap
 }
 
 .row {
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .row > img {
@@ -138,6 +141,12 @@ a:hover {
 
 i:hover {
 		animation: rotate 1s  linear;
+}
+
+@media (max-width: : 600px) {
+	.row, .textarea {
+		flex-flow: : column;
+	}
 }
 
 @keyframes fadein {
